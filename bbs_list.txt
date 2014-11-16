@@ -1,0 +1,4 @@
+wangyi_bbs.config
+http://bbs.edu.163.com/list/jiaoyu.html
+kdnet_bbs.config
+http://club.kdnet.net/list.asp?boardid=1

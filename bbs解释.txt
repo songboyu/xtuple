@@ -1,0 +1,56 @@
+﻿	public String list_link_begin; 论坛板块url的起始
+	public String list_link_end; 论坛板块url的终止
+	public String article_link_begin;//帖子URL的起始
+	public String article_link_end;//帖子URL的终止
+	public String nextpage_link_begin; 下一页的起始
+	public String nextpage_link_end; 下一页的终止
+	//里面
+	public String title_begin; 帖子标题的起始
+	public String title_end; 帖子标题的终止
+	public String date_begin; 帖子发表时间的起始
+	public String date_end; 帖子发表时间的终止
+	
+	public String author_begin; 帖子作者的起始
+	public String author_end; 帖子作者的终止
+	public String content_begin; 帖子内容的起始
+	public String content_end; 帖子内容的终止
+	public String outdate; 过期时间，例如过期时间设置为3天，则只爬取从当前时间到三天前的帖子
+	public String article_filter; 对帖子URL进行过滤，因为截取的帖子URL可能有不符合要求的，在这里设置过滤的正则表达式
+	public String column_filter; 也是对板块的URL进行过滤
+	//外边
+	public String last_modified_begin; 最新回复的时间的起始
+	public String last_modified_end;最新回复的时间的终止
+	public String site_name; 站点名称
+	
+	public String column_begin; 板块名称的起始
+	public String column_end; 板块名称的终止
+	public String reply_begin; 帖子回复的起始
+	public String reply_end; 帖子回复的终止
+	public String reply_nextpage_begin; 帖子回复下一页的起始
+	public String reply_nextpage_end; 帖子回复下一页的终止
+	public String clicknum_begin; 帖子点击数的起始
+	public String clicknum_end; 帖子点击数的终止
+	public String replynum_begin; 帖子回复数的起始
+	public String replynum_end; 帖子回复数的终止
+	
+	public String reply_time_begin; 帖子回复时间的起始
+	public String reply_time_end; 帖子回复时间的终止
+	public String lastpageFlag; 最后一页的标志
+	public String pageExample; 回复页面URL的标准
+	public String currentpageFlag; 当前回复页面url的标志，用于找到前一页的链接
+	public String encode; 网页编码
+	public String needHost; 是否需要站点的url，就是有些下一页的url是<a href="/post-free-3025059-20.shtml这种的，需要加上bbs.tianya.cn这个根才能正常访问。
+	public String basic;
+	public String passclickandreplynum;从帖子列表处获得点击数和回复数保存到hashtable，true or false
+	public String getexistmode;增量回复的模式，1代表获得页数，再组成链接；2代表找到链接
+	public String lastpagenum_begin;增量回复模式1最后一页页码的开始
+	public String lastpagenum_end;增量回复模式1最后一页页码的结束
+	public String prevpagelinkmode;1代表直接得到前一页的URL；2代表得到当前页的页码，再由此计算前一页的页码，构造前一页的URL
+	public String currentpagenum_begin;当前页页码的起始
+	public String currentpagenum_end;当前页页码的终止
+	public String forumid;网站id
+	public replyer_begin;
+	public replyer_end;
+	public replytime_begin;
+	public replytime_end;
+	//public String isAjax;是否是Ajax
