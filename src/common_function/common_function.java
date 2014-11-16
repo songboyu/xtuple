@@ -4,6 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.lang.StringEscapeUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 import xtuple.crawler.DateTransform;
 
@@ -132,5 +134,11 @@ public class common_function {
 		output = common_function.replaceSingleQuotation(output);
 
 		return output;
+	}
+	
+	public static String getTextFromHtml(String htmlStr){
+		Document doc = Jsoup.parse(htmlStr);
+		String text = doc.body().text();
+		return text;
 	}
 }

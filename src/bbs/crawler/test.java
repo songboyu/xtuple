@@ -17,22 +17,13 @@ public class test {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-		System.out.println((new Date()).getDate());
-		System.out.println((new Date()).getYear());
-		System.out.println((new Date()).getMonth());
 		System.out.println((new Date()).toLocaleString());
-		System.out.println((new Date()).toGMTString());
+		System.out.println("==================================");
 		long begin = (new Date()).getTime();
-		System.out.println(begin);
-		// TODO Auto-generated method stub
 		start = new start_crawler();
 		start.run();
-		
 		long end = (new Date()).getTime();
-		
-		System.out.println(begin);
-		System.out.println(end);
+		System.out.println("==================================");
 		System.out.println(end - begin);
 		
 		System.out.println(bbs_filter.articlenum);

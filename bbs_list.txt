@@ -1,4 +1,2 @@
-wangyi_bbs.config
-http://bbs.edu.163.com/list/jiaoyu.html
-kdnet_bbs.config
-http://club.kdnet.net/list.asp?boardid=1
+backchina_bbs.config
+http://www.backchina.com/forum.php?mod=forumdisplay&fid=37&orderby=&filter=dateline&dateline=2592000

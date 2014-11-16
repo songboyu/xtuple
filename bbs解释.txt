@@ -1,56 +1,57 @@
-ï»¿	public String list_link_begin; è®ºå›æ¿å—urlçš„èµ·å§‹
-	public String list_link_end; è®ºå›æ¿å—urlçš„ç»ˆæ­¢
-	public String article_link_begin;//å¸–å­URLçš„èµ·å§‹
-	public String article_link_end;//å¸–å­URLçš„ç»ˆæ­¢
-	public String nextpage_link_begin; ä¸‹ä¸€é¡µçš„èµ·å§‹
-	public String nextpage_link_end; ä¸‹ä¸€é¡µçš„ç»ˆæ­¢
-	//é‡Œé¢
-	public String title_begin; å¸–å­æ ‡é¢˜çš„èµ·å§‹
-	public String title_end; å¸–å­æ ‡é¢˜çš„ç»ˆæ­¢
-	public String date_begin; å¸–å­å‘è¡¨æ—¶é—´çš„èµ·å§‹
-	public String date_end; å¸–å­å‘è¡¨æ—¶é—´çš„ç»ˆæ­¢
+	public String list_link_begin; ÂÛÌ³°å¿éurlµÄÆğÊ¼
+	public String list_link_end; ÂÛÌ³°å¿éurlµÄÖÕÖ¹
+	public String article_link_begin;//Ìû×ÓURLµÄÆğÊ¼
+	public String article_link_end;//Ìû×ÓURLµÄÖÕÖ¹
+	public String nextpage_link_begin; ÏÂÒ»Ò³µÄÆğÊ¼
+	public String nextpage_link_end; ÏÂÒ»Ò³µÄÖÕÖ¹
+	//ÀïÃæ
+	public String title_begin; Ìû×Ó±êÌâµÄÆğÊ¼
+	public String title_end; Ìû×Ó±êÌâµÄÖÕÖ¹
+	public String date_begin; Ìû×Ó·¢±íÊ±¼äµÄÆğÊ¼
+	public String date_end; Ìû×Ó·¢±íÊ±¼äµÄÖÕÖ¹
 	
-	public String author_begin; å¸–å­ä½œè€…çš„èµ·å§‹
-	public String author_end; å¸–å­ä½œè€…çš„ç»ˆæ­¢
-	public String content_begin; å¸–å­å†…å®¹çš„èµ·å§‹
-	public String content_end; å¸–å­å†…å®¹çš„ç»ˆæ­¢
-	public String outdate; è¿‡æœŸæ—¶é—´ï¼Œä¾‹å¦‚è¿‡æœŸæ—¶é—´è®¾ç½®ä¸º3å¤©ï¼Œåˆ™åªçˆ¬å–ä»å½“å‰æ—¶é—´åˆ°ä¸‰å¤©å‰çš„å¸–å­
-	public String article_filter; å¯¹å¸–å­URLè¿›è¡Œè¿‡æ»¤ï¼Œå› ä¸ºæˆªå–çš„å¸–å­URLå¯èƒ½æœ‰ä¸ç¬¦åˆè¦æ±‚çš„ï¼Œåœ¨è¿™é‡Œè®¾ç½®è¿‡æ»¤çš„æ­£åˆ™è¡¨è¾¾å¼
-	public String column_filter; ä¹Ÿæ˜¯å¯¹æ¿å—çš„URLè¿›è¡Œè¿‡æ»¤
-	//å¤–è¾¹
-	public String last_modified_begin; æœ€æ–°å›å¤çš„æ—¶é—´çš„èµ·å§‹
-	public String last_modified_end;æœ€æ–°å›å¤çš„æ—¶é—´çš„ç»ˆæ­¢
-	public String site_name; ç«™ç‚¹åç§°
-	
-	public String column_begin; æ¿å—åç§°çš„èµ·å§‹
-	public String column_end; æ¿å—åç§°çš„ç»ˆæ­¢
-	public String reply_begin; å¸–å­å›å¤çš„èµ·å§‹
-	public String reply_end; å¸–å­å›å¤çš„ç»ˆæ­¢
-	public String reply_nextpage_begin; å¸–å­å›å¤ä¸‹ä¸€é¡µçš„èµ·å§‹
-	public String reply_nextpage_end; å¸–å­å›å¤ä¸‹ä¸€é¡µçš„ç»ˆæ­¢
-	public String clicknum_begin; å¸–å­ç‚¹å‡»æ•°çš„èµ·å§‹
-	public String clicknum_end; å¸–å­ç‚¹å‡»æ•°çš„ç»ˆæ­¢
-	public String replynum_begin; å¸–å­å›å¤æ•°çš„èµ·å§‹
-	public String replynum_end; å¸–å­å›å¤æ•°çš„ç»ˆæ­¢
-	
-	public String reply_time_begin; å¸–å­å›å¤æ—¶é—´çš„èµ·å§‹
-	public String reply_time_end; å¸–å­å›å¤æ—¶é—´çš„ç»ˆæ­¢
-	public String lastpageFlag; æœ€åä¸€é¡µçš„æ ‡å¿—
-	public String pageExample; å›å¤é¡µé¢URLçš„æ ‡å‡†
-	public String currentpageFlag; å½“å‰å›å¤é¡µé¢urlçš„æ ‡å¿—ï¼Œç”¨äºæ‰¾åˆ°å‰ä¸€é¡µçš„é“¾æ¥
-	public String encode; ç½‘é¡µç¼–ç 
-	public String needHost; æ˜¯å¦éœ€è¦ç«™ç‚¹çš„urlï¼Œå°±æ˜¯æœ‰äº›ä¸‹ä¸€é¡µçš„urlæ˜¯<a href="/post-free-3025059-20.shtmlè¿™ç§çš„ï¼Œéœ€è¦åŠ ä¸Šbbs.tianya.cnè¿™ä¸ªæ ¹æ‰èƒ½æ­£å¸¸è®¿é—®ã€‚
+	public String author_begin; Ìû×Ó×÷ÕßµÄÆğÊ¼
+	public String author_end; Ìû×Ó×÷ÕßµÄÖÕÖ¹
+	public String content_begin; Ìû×ÓÄÚÈİµÄÆğÊ¼
+	public String content_end; Ìû×ÓÄÚÈİµÄÖÕÖ¹
+	public String outdate; ¹ıÆÚÊ±¼ä£¬ÀıÈç¹ıÆÚÊ±¼äÉèÖÃÎª3Ìì£¬ÔòÖ»ÅÀÈ¡´Óµ±Ç°Ê±¼äµ½ÈıÌìÇ°µÄÌû×Ó
+	public String article_filter; ¶ÔÌû×ÓURL½øĞĞ¹ıÂË£¬ÒòÎª½ØÈ¡µÄÌû×ÓURL¿ÉÄÜÓĞ²»·ûºÏÒªÇóµÄ£¬ÔÚÕâÀïÉèÖÃ¹ıÂËµÄÕıÔò±í´ïÊ½
+	public String column_filter; Ò²ÊÇ¶Ô°å¿éµÄURL½øĞĞ¹ıÂË
+	//Íâ±ß
+	public String last_modified_begin; ×îĞÂ»Ø¸´µÄÊ±¼äµÄÆğÊ¼
+	public String last_modified_end;×îĞÂ»Ø¸´µÄÊ±¼äµÄÖÕÖ¹
+	public String site_name; Õ¾µãÃû³Æ
+	//ÀïÃæ
+	public String column_begin; °å¿éÃû³ÆµÄÆğÊ¼
+	public String column_end; °å¿éÃû³ÆµÄÖÕÖ¹
+	public String reply_begin; Ìû×Ó»Ø¸´µÄÆğÊ¼
+	public String reply_end; Ìû×Ó»Ø¸´µÄÖÕÖ¹
+	public String reply_nextpage_begin; Ìû×Ó»Ø¸´ÏÂÒ»Ò³µÄÆğÊ¼
+	public String reply_nextpage_end; Ìû×Ó»Ø¸´ÏÂÒ»Ò³µÄÖÕÖ¹
+	//Íâ±ß
+	public String clicknum_begin; Ìû×Óµã»÷ÊıµÄÆğÊ¼
+	public String clicknum_end; Ìû×Óµã»÷ÊıµÄÖÕÖ¹
+	public String replynum_begin; Ìû×Ó»Ø¸´ÊıµÄÆğÊ¼
+	public String replynum_end; Ìû×Ó»Ø¸´ÊıµÄÖÕÖ¹
+	//ÀïÃæ
+	public String reply_time_begin; Ìû×Ó»Ø¸´Ê±¼äµÄÆğÊ¼
+	public String reply_time_end; Ìû×Ó»Ø¸´Ê±¼äµÄÖÕÖ¹
+	public String lastpageFlag; ×îºóÒ»Ò³µÄ±êÖ¾
+	public String pageExample; »Ø¸´Ò³ÃæURLµÄ±ê×¼
+	public String currentpageFlag; µ±Ç°»Ø¸´Ò³ÃæurlµÄ±êÖ¾£¬ÓÃÓÚÕÒµ½Ç°Ò»Ò³µÄÁ´½Ó
+	public String encode; ÍøÒ³±àÂë
+	public String needHost; ÊÇ·ñĞèÒªÕ¾µãµÄurl£¬¾ÍÊÇÓĞĞ©ÏÂÒ»Ò³µÄurlÊÇ<a href="/post-free-3025059-20.shtmlÕâÖÖµÄ£¬ĞèÒª¼ÓÉÏbbs.tianya.cnÕâ¸ö¸ù²ÅÄÜÕı³£·ÃÎÊ¡£
 	public String basic;
-	public String passclickandreplynum;ä»å¸–å­åˆ—è¡¨å¤„è·å¾—ç‚¹å‡»æ•°å’Œå›å¤æ•°ä¿å­˜åˆ°hashtableï¼Œtrue or false
-	public String getexistmode;å¢é‡å›å¤çš„æ¨¡å¼ï¼Œ1ä»£è¡¨è·å¾—é¡µæ•°ï¼Œå†ç»„æˆé“¾æ¥ï¼›2ä»£è¡¨æ‰¾åˆ°é“¾æ¥
-	public String lastpagenum_begin;å¢é‡å›å¤æ¨¡å¼1æœ€åä¸€é¡µé¡µç çš„å¼€å§‹
-	public String lastpagenum_end;å¢é‡å›å¤æ¨¡å¼1æœ€åä¸€é¡µé¡µç çš„ç»“æŸ
-	public String prevpagelinkmode;1ä»£è¡¨ç›´æ¥å¾—åˆ°å‰ä¸€é¡µçš„URLï¼›2ä»£è¡¨å¾—åˆ°å½“å‰é¡µçš„é¡µç ï¼Œå†ç”±æ­¤è®¡ç®—å‰ä¸€é¡µçš„é¡µç ï¼Œæ„é€ å‰ä¸€é¡µçš„URL
-	public String currentpagenum_begin;å½“å‰é¡µé¡µç çš„èµ·å§‹
-	public String currentpagenum_end;å½“å‰é¡µé¡µç çš„ç»ˆæ­¢
-	public String forumid;ç½‘ç«™id
+	public String passclickandreplynum;´ÓÌû×ÓÁĞ±í´¦»ñµÃµã»÷ÊıºÍ»Ø¸´Êı±£´æµ½hashtable£¬true or false
+	public String getexistmode;ÔöÁ¿»Ø¸´µÄÄ£Ê½£¬1´ú±í»ñµÃÒ³Êı£¬ÔÙ×é³ÉÁ´½Ó£»2´ú±íÕÒµ½Á´½Ó
+	public String lastpagenum_begin;ÔöÁ¿»Ø¸´Ä£Ê½1×îºóÒ»Ò³Ò³ÂëµÄ¿ªÊ¼
+	public String lastpagenum_end;ÔöÁ¿»Ø¸´Ä£Ê½1×îºóÒ»Ò³Ò³ÂëµÄ½áÊø
+	public String prevpagelinkmode;1´ú±íÖ±½ÓµÃµ½Ç°Ò»Ò³µÄURL£»2´ú±íµÃµ½µ±Ç°Ò³µÄÒ³Âë£¬ÔÙÓÉ´Ë¼ÆËãÇ°Ò»Ò³µÄÒ³Âë£¬¹¹ÔìÇ°Ò»Ò³µÄURL
+	public String currentpagenum_begin;µ±Ç°Ò³Ò³ÂëµÄÆğÊ¼
+	public String currentpagenum_end;µ±Ç°Ò³Ò³ÂëµÄÖÕÖ¹
+	public String forumid;ÍøÕ¾id
 	public replyer_begin;
 	public replyer_end;
 	public replytime_begin;
 	public replytime_end;
-	//public String isAjax;æ˜¯å¦æ˜¯Ajax
+	//public String isAjax;ÊÇ·ñÊÇAjax

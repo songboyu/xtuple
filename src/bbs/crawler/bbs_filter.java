@@ -1,5 +1,7 @@
 package bbs.crawler;
 
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -34,28 +36,28 @@ import common_function.common_function;
 public class bbs_filter {
 	private bbs_configure config;
 	private cls_database db = new cls_database();
-	
+
 	private static AtomicInteger article_num = new AtomicInteger(0);
 	private static AtomicInteger error_number = new AtomicInteger(0);
-	
+
 	public static int page_number = 0;
 	public static int postlistpagenum = 0;
 	public static int update_number = 0;
 	public static int update_request_number = 0;
-	
+
 	public blog_download singe_thread_getter = new blog_download();
 	public blog_download_new getter = new blog_download_new();
-	
+
 	public Hashtable<String, String> ReplyClickNum = new Hashtable<String, String>();
-	
+
 	DateTransform d = new DateTransform();
-	
+
 	ScriptEngineManager js_eng_manager;
 	ScriptEngine js_engine;
-	
+
 	private static int columnnum = 1;
 	static int articlenum = 1;
-	
+
 	public String post_batch = "";
 
 	public bbs_filter(bbs_configure config) {
@@ -181,7 +183,8 @@ public class bbs_filter {
 						+ "ShowForum.asp"
 						+ get_nextpagelink_from_js(s_nextpagelink);
 			} else if (config.needHost.equals("true")
-					&& !config.site_name.equals("温哥华巅峰")) {
+					&& !config.site_name.equals("温哥华巅峰")
+					&& !config.site_name.equals("倍可亲论坛")) {
 				String host = common_function.getHost(item.link);
 				s_nextpagelink = host + s_nextpagelink;
 			}
@@ -199,6 +202,7 @@ public class bbs_filter {
 
 		try {
 			while (begin.find(list_link_end)) {
+
 				list_link_begin = begin.end();
 				if (end.find(list_link_begin))
 					list_link_end = end.start();
@@ -601,7 +605,6 @@ public class bbs_filter {
 		Matcher matcher = pattern.matcher(item.html);
 
 		// lastpage
-
 		Pattern pattern_begin = Pattern.compile(config.lastpagenum_begin); // config
 		Matcher matcher_begin = pattern_begin.matcher(item.html);
 
@@ -840,11 +843,11 @@ public class bbs_filter {
 	}
 
 	public boolean check_article(cls_item item, DefaultHttpClient httpclient, AtomicInteger title_id) throws InterruptedException, SQLException {
-		
+
 		Article article = new Article(item, config, db);
 		article.set_httpclient(httpclient);
 		article.set_reply_click_num(ReplyClickNum);
-		
+
 		if(!article.check_title()) 		return false;
 		if(!article.check_post_date()) 	return false;
 		if(!article.check_content()) 	return false;
@@ -856,30 +859,30 @@ public class bbs_filter {
 
 		article_num.getAndIncrement();
 		int ok = db.update("insert into forum_title(website_id,website_name,title_id,title,url,click_num,content,reply_num,author,last_re_time,time,search_id)"
-						+ "values('"
-						+ config.forumid
-						+ "','"
-						+ config.site_name
-						+ "','"
-						+ article.s_id
-						+ "','"
-						+ article.s_title
-						+ "','"
-						+ item.link
-						+ "','"
-						+ article.clicknum
-						+ "','"
-						+ article.s_content
-						+ "','"
-						+ article.replynum
-						+ "','"
-						+ article.s_author
-						+ "','"
-						+ article.last_reply_time
-						+ "','" 
-						+ article.s_time 
-						+ "','" 
-						+ article.post_batch + "')");
+				+ "values('"
+				+ config.forumid
+				+ "','"
+				+ config.site_name
+				+ "','"
+				+ article.s_id
+				+ "','"
+				+ article.s_title
+				+ "','"
+				+ item.link
+				+ "','"
+				+ article.clicknum
+				+ "','"
+				+ article.s_content
+				+ "','"
+				+ article.replynum
+				+ "','"
+				+ article.s_author
+				+ "','"
+				+ article.last_reply_time
+				+ "','" 
+				+ article.s_time 
+				+ "','" 
+				+ article.post_batch + "')");
 		error_number.getAndAdd(ok);
 		if (ok == 0) {
 			//记录错误日志
@@ -887,7 +890,7 @@ public class bbs_filter {
 		System.out.println("Pagenum: " + page_number);
 		System.out.println("Linknum: " + article_num.get());
 		System.out.println("success:"+ error_number.get());
-		
+
 		return true;
 	}
 }

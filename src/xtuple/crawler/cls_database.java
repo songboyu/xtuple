@@ -23,6 +23,10 @@ public class cls_database {
     private String classname = "com.mysql.jdbc.Driver";   
     private String username =  "bluetech";   
     private String password =  "No.9332";   
+//    private String url = "jdbc:mysql://127.0.0.1:3306/eventdb?useUnicode=true&characterEncoding=UTF-8";   
+//    private String classname = "com.mysql.jdbc.Driver";   
+//    private String username =  "root";   
+//    private String password =  "123123";
     /*----------------------------------------------------*/  
   /**  
    * 构造函数  

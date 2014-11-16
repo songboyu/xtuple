@@ -68,7 +68,7 @@ public class Article {
 		this.item = item;
 		this.config = config;
 		this.db = db;
-
+		
 		ResultSet rs = db.getRs("select Max(title_id) from forum_title where website_name='" + config.site_name+ "'");
 		rs.next();
 		s_id = rs.getInt(1) + 1;
@@ -100,6 +100,8 @@ public class Article {
 		if (s_title != null) {
 			s_title = common_function.purifyHtml(s_title);
 			s_title = common_function.replaceSingleQuotation(s_title);
+			s_title = common_function.getTextFromHtml(s_title);
+			
 			System.out.println("Title: " + s_title);
 			return true;
 		} else {
@@ -150,6 +152,7 @@ public class Article {
 			String str_result = find_video.replaceAll("");
 			s_content = common_function.purifyHtml(str_result);
 			s_content = common_function.replaceSingleQuotation(s_content);
+			s_content = common_function.getTextFromHtml(s_content);
 			
 			System.out.println("Content Check OK");
 			return true;
@@ -342,6 +345,7 @@ public class Article {
 						}
 						replycontent_tmp = currentpage.html.substring(reply_begin, reply_end);
 						replycontent_tmp = common_function.purifyHtml(replycontent_tmp);
+						replycontent_tmp = common_function.getTextFromHtml(replycontent_tmp);
 
 						if (!config.site_name.equals("文学城"))
 							if (first == 0 && firstpage == 0)
