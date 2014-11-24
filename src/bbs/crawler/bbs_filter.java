@@ -293,9 +293,17 @@ public class bbs_filter {
 
 				s_articlelink = item.html.substring(list_link_begin,
 						list_link_end);
-				if (config.needHost.equals("true") && config.site_name.equals("网易论坛")) {
+				if (config.needHost.equals("true") && config.site_name.equals("网易教育论坛")) {
 					String host = common_function.getHost(item.link);
 					s_articlelink = host + "bbs/jiaoyu/"+s_articlelink;
+				}
+				else if (config.needHost.equals("true") && config.site_name.equals("网易八卦论坛")) {
+					String host = common_function.getHost(item.link);
+					s_articlelink = host + "bbs/bagua/"+s_articlelink;
+				}
+				else if (config.needHost.equals("true") && config.site_name.equals("网易篮球论坛")) {
+					String host = common_function.getHost(item.link);
+					s_articlelink = host + "bbs/basketball/"+s_articlelink;
 				}
 				else if (config.needHost.equals("true")) {
 					String host = common_function.getHost(item.link);
