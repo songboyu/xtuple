@@ -19,14 +19,14 @@ public class cls_database {
     private ResultSet rs;   
     private Statement stm;   
     private Connection con;   
-    private String url = "jdbc:mysql://125.211.198.185:3306/eventdb?useUnicode=true&characterEncoding=UTF-8";   
-    private String classname = "com.mysql.jdbc.Driver";   
-    private String username =  "bluetech";   
-    private String password =  "No.9332";   
-//    private String url = "jdbc:mysql://127.0.0.1:3306/eventdb?useUnicode=true&characterEncoding=UTF-8";   
+//    private String url = "jdbc:mysql://125.211.198.185:3306/eventdb?useUnicode=true&characterEncoding=UTF-8";   
 //    private String classname = "com.mysql.jdbc.Driver";   
-//    private String username =  "root";   
-//    private String password =  "123123";
+//    private String username =  "bluetech";   
+//    private String password =  "No.9332";   
+    private String url = "jdbc:mysql://127.0.0.1:3306/eventdb?useUnicode=true&characterEncoding=UTF-8";   
+    private String classname = "com.mysql.jdbc.Driver";   
+    private String username =  "root";   
+    private String password =  "123123";
     /*----------------------------------------------------*/  
   /**  
    * 构造函数  

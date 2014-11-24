@@ -1,7 +1,5 @@
 package bbs.crawler;
 
-import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -652,7 +650,7 @@ public class bbs_filter {
 				String host = common_function.getHost(item.link);
 				lastpage_link = host + lastpage_link;
 			}
-			System.out.println("=========="+lastpage_link);
+//			System.out.println("=========="+lastpage_link);
 			do {
 				currentpage = getter.download(httpclient, lastpage_link,
 						config.encode);
