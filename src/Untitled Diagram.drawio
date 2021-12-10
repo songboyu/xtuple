@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-10T12:43:02.025Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44" etag="7Yt2QOz6ntRdt8MW0wbj" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-10T12:51:33.751Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44" etag="qkF-swmALXmnAWoRLDvi" version="15.9.4" type="github">
   <diagram id="51dJ9gH7P7qgkjwUIwsL" name="Page-1">
     <mxGraphModel dx="1298" dy="742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -94,6 +94,82 @@
         </mxCell>
         <mxCell id="ABUXH3rSY7tyzEH833zm-23" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="684" y="315" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-30" target="ABUXH3rSY7tyzEH833zm-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-30" value="提交印象标记" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-31" value="拉取、覆盖视频&lt;br&gt;历史标记记录&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%E6%8F%90%E4%BA%A4%E5%8D%B0%E8%B1%A1%E6%A0%87%E8%AE%B0%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2270%22%20y%3D%22660%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-33" target="ABUXH3rSY7tyzEH833zm-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-33" value="新加组A" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="100" y="770" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-34" value="删除组B" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="100" y="870" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-35" target="ABUXH3rSY7tyzEH833zm-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-35" value="获取标记元数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-36" target="ABUXH3rSY7tyzEH833zm-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-36" value="批量事务写存储（key1-1, key1-2, key1-3, key1-4, key2-1, key1-21,key1-23）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-37" target="ABUXH3rSY7tyzEH833zm-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-37" value="第一次标记该视频" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="950" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-38" target="ABUXH3rSY7tyzEH833zm-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-38" value="&lt;div&gt;写标记存储（key1-9, key1-10, key1-20, key1-22）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-39" target="ABUXH3rSY7tyzEH833zm-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-39" value="对于每个印象，写词双向标记" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-40" target="ABUXH3rSY7tyzEH833zm-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-40" value="更新我被谁标记过多少个标记数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-41" target="ABUXH3rSY7tyzEH833zm-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-41" value="&lt;div&gt;更新标记元数据（key1-7,key1-8），视频标记数（key1-12）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ABUXH3rSY7tyzEH833zm-42" target="ABUXH3rSY7tyzEH833zm-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-42" value="发送系统消息，告知视频作者" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="644" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ABUXH3rSY7tyzEH833zm-43" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="815" width="90" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
